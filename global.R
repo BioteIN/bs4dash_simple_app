@@ -6,8 +6,7 @@ library(readxl)
 library(tidyverse)
 library(highcharter)
 
-library(lubridate) # for date
-
+library(lubridate)
 library(shiny)
 require(shinydashboard)
 library(ggplot2)

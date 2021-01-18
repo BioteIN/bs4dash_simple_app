@@ -1,0 +1,12 @@
+name: bs4dash_simple_app
+title: bs4dash_simple_app
+username:
+account: bngovene
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3445009
+bundleId: 4063423
+url: https://bngovene.shinyapps.io/bs4dash_simple_app/
+when: 1609916638.95028
+asMultiple: FALSE
+asStatic: FALSE

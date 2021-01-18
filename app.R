@@ -65,8 +65,7 @@ if (interactive()) {
        bs4TabItems(
          recarregamento_tab,
          segmentacao_tab
-         #vendas_por_data_tab
-         #vendas_por_tipo_tab
+        
        )
       ),
       title = "AttachmentBlock"

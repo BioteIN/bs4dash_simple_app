@@ -65,37 +65,35 @@ output$value3 <- renderValueBox({
 
 
 
-#frow1 <- fluidRow(
-#  valueBox(
-#    formatC(sales.account()$value, format="d", big.mark=',')
-#    ,paste('Quantidade de Recargas Vendidas',sales.account()$Account)
-#    ,icon = icon("stats",lib='glyphicon')
-#    ,color = "purple"
-#  ),
-#  bs4InfoBox(
-#    title = " Valor Total das Recargas Vendidas",
-#    value = formatC(prof.prod()$value, format="d", big.mark=','),
-#    icon = icon("gbp",lib='glyphicon'),
-#    color = "red"
-#  )
-#  ,
-#  bs4InfoBox(
-#    title = " Valor de Recargas Mensais",
-#    value = formatC(total.revenue()$value, format="d", big.mark=','),
-#    icon = icon("menu-hamburger",lib='glyphicon')
-#    ,color = "yellow"
-#  )
-  
-  # valueBoxOutput("value1")
-  # ,valueBoxOutput("value2")
-  # ,valueBoxOutput("value3")
-#)
-
 frow1 <- fluidRow(
+  bs4InfoBox(
+    formatC(sales.account()$value, format="d", big.mark=',')
+    ,paste('Quantidade de Recargas Vendidas',sales.account()$Account)
+    ,icon = icon("stats",lib='glyphicon')
+    ,color = "purple"
+  ),
+  bs4InfoBox(
+    title = " Valor Total das Recargas Vendidas",
+    value = formatC(prof.prod()$value, format="d", big.mark=','),
+    icon = icon("gbp",lib='glyphicon'),
+    color = "red"  )
+  ,
+  bs4InfoBox(
+    title = " Valor de Recargas Mensais",
+    value = formatC(total.revenue()$value, format="d", big.mark=','),
+    icon = icon("menu-hamburger",lib='glyphicon')
+    ,color = "yellow"
+  )
+  
+   
+)
+
+frow4 <- fluidRow(
   valueBoxOutput("value1")
   ,valueBoxOutput("value2")
   ,valueBoxOutput("value3")
 )
+
 
 
 
@@ -171,3 +169,4 @@ output$recarregamento_UI <- renderUI({
       
     )
 })
+
